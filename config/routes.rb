@@ -4,4 +4,5 @@ Rails.application.routes.draw do
 
   root to: "pages#index"
   resources :event, only: [:show,:index]
+  resources :comments, only: [:create]
 end
